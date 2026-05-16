@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FoodieHub – Contact Us</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body data-page="contact">
+
+<!-- ════════════════════════════════ NAVBAR ════ -->
+<nav class="navbar">
+  <div class="container">
+    <a href="index.html" class="nav-logo">
+      <div class="logo-icon">🍴</div>
+      Foodie<span>Hub</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="menu.html">Menu</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="contact.html" class="active">Contact</a></li>
+    </ul>
+    <div class="nav-actions">
+      <button class="btn-icon" id="darkModeBtn" title="Toggle dark mode">
+        <i class="fa-solid fa-moon"></i>
+      </button>
+      <button class="btn-icon open-cart" title="Open cart">
+        <i class="fa-solid fa-bag-shopping"></i>
+        <span class="cart-badge">0</span>
+      </button>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</nav>
+<nav class="mobile-nav" id="mobileNav">
+  <a href="index.html">Home</a>
+  <a href="menu.html">Menu</a>
+  <a href="about.html">About Us</a>
+  <a href="contact.html" class="active">Contact</a>
+</nav>
+
+<!-- ════════════════════════════ PAGE HERO ════ -->
+<section class="page-hero">
+  <div class="container">
+    <div class="breadcrumb">
+      <a href="index.html">Home</a>
+      <span>›</span>
+      <span>Contact</span>
+    </div>
+    <h1>Get in <span style="color:var(--primary)">Touch</span></h1>
+    <p>Have a question, feedback, or a catering inquiry? We'd love to hear from you. Our team typically responds within 2 hours.</p>
+  </div>
+</section>
+
+<!-- ════════════════════════════ CONTACT SECTION ════ -->
+<section class="section" style="padding-top:64px">
+  <div class="container">
+    <div class="contact-grid">
+
+      <!-- Left: Info -->
+      <div class="contact-info">
+        <div>
+          <span class="section-label">Reach Us</span>
+          <h2 style="margin-bottom:8px">We're Here<br>to Help You 🤝</h2>
+          <p style="color:var(--text-muted);font-size:0.95rem;line-height:1.7;margin-bottom:32px">
+            Whether it's a delayed order, a special request, or just some feedback — we're always listening.
+            Reach us any way that works for you.
+          </p>
+        </div>
+        <div class="contact-item reveal">
+          <div class="contact-item-icon"><i class="fa-solid fa-location-dot"></i></div>
+          <div class="contact-item-text">
+            <h4>Our Address</h4>
+            <p>Shop No. 12, FC Road, Deccan Gymkhana<br>Pune – 411004, Maharashtra, India</p>
+          </div>
+        </div>
+        <div class="contact-item reveal">
+          <div class="contact-item-icon"><i class="fa-solid fa-phone"></i></div>
+          <div class="contact-item-text">
+            <h4>Phone Number</h4>
+            <p><a href="tel:+919999999999" style="color:var(--primary);font-weight:600">+91 99999 99999</a><br>
+            <a href="tel:+918888888888" style="color:var(--primary);font-weight:600">+91 88888 88888</a> (WhatsApp)</p>
+          </div>
+        </div>
+        <div class="contact-item reveal">
+          <div class="contact-item-icon"><i class="fa-solid fa-envelope"></i></div>
+          <div class="contact-item-text">
+            <h4>Email Us</h4>
+            <p><a href="mailto:hello@foodiehub.in" style="color:var(--primary);font-weight:600">hello@foodiehub.in</a><br>
+            <a href="mailto:catering@foodiehub.in" style="color:var(--primary);font-weight:600">catering@foodiehub.in</a></p>
+          </div>
+        </div>
+        <div class="contact-item reveal">
+          <div class="contact-item-icon"><i class="fa-solid fa-clock"></i></div>
+          <div class="contact-item-text">
+            <h4>Working Hours</h4>
+            <p>
+              <strong>Mon – Fri:</strong> 10:00 AM – 11:00 PM<br>
+              <strong>Sat – Sun:</strong> 9:00 AM – 11:30 PM
+            </p>
+          </div>
+        </div>
+        <div class="contact-item reveal">
+          <div class="contact-item-icon"><i class="fa-brands fa-whatsapp"></i></div>
+          <div class="contact-item-text">
+            <h4>Follow Us</h4>
+            <div class="social-links">
+              <a href="#" class="social-link" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+              <a href="#" class="social-link" title="Facebook"><i class="fa-brands fa-facebook"></i></a>
+              <a href="#" class="social-link" title="Twitter"><i class="fa-brands fa-twitter"></i></a>
+              <a href="#" class="social-link" title="YouTube"><i class="fa-brands fa-youtube"></i></a>
+              <a href="#" class="social-link" title="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right: Form -->
+      <div class="contact-form-wrap reveal">
+        <h3>Send Us a Message</h3>
+        <p>Fill in the form below and we'll get back to you within 2 hours.</p>
+        <form id="contactForm" novalidate>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="firstName">First Name *</label>
+              <input type="text" id="firstName" placeholder="Arjun" required />
+            </div>
+            <div class="form-group">
+              <label for="lastName">Last Name *</label>
+              <input type="text" id="lastName" placeholder="Sharma" required />
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="email">Email Address *</label>
+              <input type="email" id="email" placeholder="arjun@example.com" required />
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone Number</label>
+              <input type="tel" id="phone" placeholder="+91 98765 43210" />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="subject">Subject *</label>
+            <select id="subject" required>
+              <option value="" disabled selected>Select a subject…</option>
+              <option value="order">Order Issue / Complaint</option>
+              <option value="feedback">Feedback & Suggestions</option>
+              <option value="catering">Catering Inquiry</option>
+              <option value="partnership">Business Partnership</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="message">Your Message *</label>
+            <textarea id="message" placeholder="Tell us how we can help you…" required></textarea>
+          </div>
+          <!-- Rating -->
+          <div class="form-group">
+            <label>Rate Your Experience (optional)</label>
+            <div id="starRating" style="display:flex;gap:6px;font-size:1.6rem;cursor:pointer">
+              <span data-val="1" style="color:#ddd">★</span>
+              <span data-val="2" style="color:#ddd">★</span>
+              <span data-val="3" style="color:#ddd">★</span>
+              <span data-val="4" style="color:#ddd">★</span>
+              <span data-val="5" style="color:#ddd">★</span>
+            </div>
+            <input type="hidden" id="ratingInput" value="0" />
+          </div>
+          <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center;padding:14px">
+            <i class="fa-solid fa-paper-plane"></i> Send Message
+          </button>
+        </form>
+        <div class="form-success" id="formSuccess">
+          <div style="font-size:3rem;margin-bottom:12px">✅</div>
+          <h3 style="font-family:'DM Sans',sans-serif;font-size:1.1rem;color:var(--text)">Message Sent Successfully!</h3>
+          <p style="color:var(--text-muted);font-size:0.9rem;margin-top:8px">
+            Thank you for reaching out. Our team will get back to you within 2 hours.
+          </p>
+          <a href="index.html" class="btn btn-primary" style="margin-top:20px">
+            <i class="fa-solid fa-house"></i> Back to Home
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Google Maps Embed -->
+    <div class="map-wrap reveal" style="margin-top:64px">
+      <div style="background:var(--bg-section);padding:20px 24px;border-bottom:1px solid var(--border)">
+        <h3 style="font-size:1.1rem;display:flex;align-items:center;gap:10px">
+          <i class="fa-solid fa-location-dot" style="color:var(--primary)"></i>
+          Find Us Here — FC Road, Deccan, Pune
+        </h3>
+      </div>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3783.7484282938483!2d73.8374!3d18.5121!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2bf7b0c3d9d1b%3A0x5c4c0d5e7e5d5c5f!2sFC%20Road%2C%20Deccan%20Gymkhana%2C%20Pune%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin"
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        title="FoodieHub Location – FC Road, Pune">
+      </iframe>
+    </div>
+
+  </div>
+</section>
+
+<!-- ════════════════════════════ FAQ SECTION ════ -->
+<section class="section" style="background:var(--bg-section)">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-label">FAQs</span>
+      <h2>Frequently Asked Questions</h2>
+    </div>
+    <div style="max-width:720px;margin:0 auto;display:flex;flex-direction:column;gap:16px">
+      <details class="reveal" style="background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius);overflow:hidden">
+        <summary style="padding:20px 24px;font-weight:600;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center">
+          How long does delivery take? <i class="fa-solid fa-chevron-down" style="color:var(--primary);font-size:0.8rem"></i>
+        </summary>
+        <p style="padding:0 24px 20px;color:var(--text-muted);font-size:0.93rem;line-height:1.7">
+          Our average delivery time is 25–30 minutes. This depends on your location and current order volume. During peak hours (lunch/dinner), it may take up to 40 minutes.
+        </p>
+      </details>
+      <details class="reveal" style="background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius);overflow:hidden">
+        <summary style="padding:20px 24px;font-weight:600;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center">
+          What areas do you deliver to? <i class="fa-solid fa-chevron-down" style="color:var(--primary);font-size:0.8rem"></i>
+        </summary>
+        <p style="padding:0 24px 20px;color:var(--text-muted);font-size:0.93rem;line-height:1.7">
+          We currently deliver to most areas in Pune including Deccan, Kothrud, Baner, Aundh, Hinjewadi, Viman Nagar, Koregaon Park, and more. Enter your pincode at checkout to confirm.
+        </p>
+      </details>
+      <details class="reveal" style="background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius);overflow:hidden">
+        <summary style="padding:20px 24px;font-weight:600;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center">
+          How do I apply a discount coupon? <i class="fa-solid fa-chevron-down" style="color:var(--primary);font-size:0.8rem"></i>
+        </summary>
+        <p style="padding:0 24px 20px;color:var(--text-muted);font-size:0.93rem;line-height:1.7">
+          On the cart/checkout page, you'll see a "Apply Coupon" field. Enter your code (e.g. WELCOME30, PIZZA2X) and click Apply. The discount will be deducted automatically.
+        </p>
+      </details>
+      <details class="reveal" style="background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius);overflow:hidden">
+        <summary style="padding:20px 24px;font-weight:600;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center">
+          Do you have vegetarian / vegan options? <i class="fa-solid fa-chevron-down" style="color:var(--primary);font-size:0.8rem"></i>
+        </summary>
+        <p style="padding:0 24px 20px;color:var(--text-muted);font-size:0.93rem;line-height:1.7">
+          Absolutely! A large portion of our menu is vegetarian and we're growing our vegan options. All veg items are clearly marked with a green "Veg" badge. Look for plant-based alternatives in every category.
+        </p>
+      </details>
+      <details class="reveal" style="background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius);overflow:hidden">
+        <summary style="padding:20px 24px;font-weight:600;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center">
+          What payment methods do you accept? <i class="fa-solid fa-chevron-down" style="color:var(--primary);font-size:0.8rem"></i>
+        </summary>
+        <p style="padding:0 24px 20px;color:var(--text-muted);font-size:0.93rem;line-height:1.7">
+          We accept UPI (PhonePe, GPay, Paytm), Credit/Debit Cards (Visa, Mastercard, RuPay), Net Banking, and Cash on Delivery. Online payments are 100% secure via Razorpay.
+        </p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════════ FOOTER ════ -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="nav-logo">
+          <div class="logo-icon">🍴</div>
+          Foodie<span>Hub</span>
+        </a>
+        <p>Bringing delicious, freshly-cooked food to your doorstep since 2022.</p>
+        <div class="social-links" style="margin-top:16px">
+          <a href="#" class="social-link"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" class="social-link"><i class="fa-brands fa-facebook"></i></a>
+          <a href="#" class="social-link"><i class="fa-brands fa-twitter"></i></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h5>Quick Links</h5>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col"></div>
+      <div class="footer-col">
+        <h5>Contact</h5>
+        <ul>
+          <li><a href="tel:+919999999999"><i class="fa-solid fa-phone"></i> +91 99999 99999</a></li>
+          <li><a href="mailto:hello@foodiehub.in"><i class="fa-solid fa-envelope"></i> hello@foodiehub.in</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 FoodieHub. Made with ❤️ for food lovers.</p>
+    </div>
+  </div>
+</footer>
+
+<!-- CART -->
+<div class="cart-overlay" id="cartOverlay"></div>
+<aside class="cart-panel" id="cartPanel">
+  <div class="cart-header">
+    <h3><i class="fa-solid fa-bag-shopping" style="color:var(--primary);margin-right:8px"></i> Your Cart</h3>
+    <button class="cart-close" id="cartClose"><i class="fa-solid fa-xmark"></i></button>
+  </div>
+  <div class="cart-items" id="cartItems"></div>
+  <div class="cart-footer">
+    <div class="cart-totals">
+      <div class="cart-row"><span>Subtotal</span><span id="cartSubtotal">₹0</span></div>
+      <div class="cart-row"><span>Delivery Fee</span><span id="cartDelivery">₹0</span></div>
+      <div class="cart-row"><span>GST (5%)</span><span id="cartTax">₹0</span></div>
+      <div class="cart-row total"><span>Total</span><span id="cartTotal">₹0</span></div>
+    </div>
+    <button class="btn btn-primary" id="placeOrder">
+      <i class="fa-solid fa-check-circle"></i> Place Order
+    </button>
+  </div>
+</aside>
+<div class="modal-overlay" id="orderModal">
+  <div class="modal">
+    <div class="modal-icon">🎉</div>
+    <h3>Order Placed!</h3>
+    <p>Order <strong id="orderNum">#FH12345</strong> confirmed. ETA: <strong>25–30 mins</strong></p>
+    <table class="bill-table">
+      <thead><tr><th>Item</th><th>Qty</th><th>Amount</th></tr></thead>
+      <tbody id="billBody"></tbody>
+      <tfoot>
+        <tr class="bill-total"><td colspan="2"><strong>Grand Total</strong></td><td><strong id="billTotal">₹0</strong></td></tr>
+      </tfoot>
+    </table>
+    <button class="btn btn-primary" id="modalClose" style="width:100%;justify-content:center">Done</button>
+  </div>
+</div>
+
+<script src="js/script.js"></script>
+<script>
+  // Star rating widget for contact form
+  document.addEventListener('DOMContentLoaded', () => {
+    const stars = document.querySelectorAll('#starRating span');
+    const input = document.getElementById('ratingInput');
+    if (!stars.length) return;
+    stars.forEach(star => {
+      star.addEventListener('mouseenter', () => {
+        const v = +star.dataset.val;
+        stars.forEach(s => s.style.color = +s.dataset.val <= v ? 'var(--accent)' : '#ddd');
+      });
+      star.addEventListener('mouseleave', () => {
+        const cur = +input.value;
+        stars.forEach(s => s.style.color = +s.dataset.val <= cur ? 'var(--accent)' : '#ddd');
+      });
+      star.addEventListener('click', () => {
+        input.value = star.dataset.val;
+      });
+    });
+  });
+</script>
+</body>
+</html>

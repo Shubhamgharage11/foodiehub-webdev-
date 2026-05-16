@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FoodieHub – About Us</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body data-page="about">
+
+<!-- ════════════════════════════════ NAVBAR ════ -->
+<nav class="navbar">
+  <div class="container">
+    <a href="index.html" class="nav-logo">
+      <div class="logo-icon">🍴</div>
+      Foodie<span>Hub</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="menu.html">Menu</a></li>
+      <li><a href="about.html" class="active">About Us</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="nav-actions">
+      <button class="btn-icon" id="darkModeBtn" title="Toggle dark mode">
+        <i class="fa-solid fa-moon"></i>
+      </button>
+      <button class="btn-icon open-cart" title="Open cart">
+        <i class="fa-solid fa-bag-shopping"></i>
+        <span class="cart-badge">0</span>
+      </button>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</nav>
+<nav class="mobile-nav" id="mobileNav">
+  <a href="index.html">Home</a>
+  <a href="menu.html">Menu</a>
+  <a href="about.html" class="active">About Us</a>
+  <a href="contact.html">Contact</a>
+</nav>
+
+<!-- ════════════════════════════ PAGE HERO ════ -->
+<section class="page-hero">
+  <div class="container">
+    <div class="breadcrumb">
+      <a href="index.html">Home</a>
+      <span>›</span>
+      <span>About Us</span>
+    </div>
+    <h1>Our <span style="color:var(--primary)">Story</span> & Mission</h1>
+    <p>Born in Pune, built for food lovers. We started FoodieHub with one simple goal — get great food to great people, fast.</p>
+  </div>
+</section>
+
+<!-- ════════════════════════════ ABOUT SECTION ════ -->
+<section class="section about-hero" style="padding-top:80px">
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-image-wrap reveal">
+        🍽️
+        <div class="about-badge">
+          <div class="num">3+</div>
+          <div class="lbl">Years of<br>Excellence</div>
+        </div>
+      </div>
+      <div class="reveal">
+        <span class="section-label">Who We Are</span>
+        <h2>Crafting Memorable Meals, One Order at a Time</h2>
+        <p style="color:var(--text-muted);margin:16px 0;line-height:1.75;font-size:1.02rem">
+          FoodieHub started in 2022 in the heart of Pune as a tiny kitchen run by two food-obsessed friends.
+          Today, we serve over <strong>10,000 happy customers</strong> every month with a menu that celebrates
+          both Indian comfort food and global flavours — all prepared fresh, every single day.
+        </p>
+        <p style="color:var(--text-muted);margin-bottom:28px;line-height:1.75;font-size:1.02rem">
+          We believe great food shouldn't be complicated. Our chefs use locally sourced ingredients,
+          time-tested recipes, and a whole lot of love to make sure every bite is worth it.
+        </p>
+        <div class="about-list">
+          <div class="about-list-item">
+            <div class="about-list-icon"><i class="fa-solid fa-seedling"></i></div>
+            <div class="about-list-text">
+              <strong>Locally Sourced Produce</strong>
+              <span>Fresh vegetables and dairy from local Pune farms, delivered daily.</span>
+            </div>
+          </div>
+          <div class="about-list-item">
+            <div class="about-list-icon"><i class="fa-solid fa-fire-flame-curved"></i></div>
+            <div class="about-list-text">
+              <strong>Cooked to Order</strong>
+              <span>Nothing sits under a heat lamp. Every dish is prepared after you order.</span>
+            </div>
+          </div>
+          <div class="about-list-item">
+            <div class="about-list-icon"><i class="fa-solid fa-award"></i></div>
+            <div class="about-list-text">
+              <strong>FSSAI Certified Kitchen</strong>
+              <span>We maintain the highest food safety and hygiene standards at all times.</span>
+            </div>
+          </div>
+        </div>
+        <a href="menu.html" class="btn btn-primary">
+          <i class="fa-solid fa-utensils"></i> Explore Our Menu
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════ STATS ════ -->
+<section style="background:var(--primary);padding:60px 0">
+  <div class="container">
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:32px;text-align:center;color:#fff">
+      <div class="reveal">
+        <div style="font-family:'Playfair Display',serif;font-size:2.8rem;font-weight:900;line-height:1">10K+</div>
+        <div style="opacity:0.85;margin-top:6px;font-size:0.95rem">Happy Customers</div>
+      </div>
+      <div class="reveal">
+        <div style="font-family:'Playfair Display',serif;font-size:2.8rem;font-weight:900;line-height:1">50+</div>
+        <div style="opacity:0.85;margin-top:6px;font-size:0.95rem">Menu Items</div>
+      </div>
+      <div class="reveal">
+        <div style="font-family:'Playfair Display',serif;font-size:2.8rem;font-weight:900;line-height:1">4.9★</div>
+        <div style="opacity:0.85;margin-top:6px;font-size:0.95rem">Average Rating</div>
+      </div>
+      <div class="reveal">
+        <div style="font-family:'Playfair Display',serif;font-size:2.8rem;font-weight:900;line-height:1">30 Min</div>
+        <div style="opacity:0.85;margin-top:6px;font-size:0.95rem">Avg. Delivery Time</div>
+      </div>
+      <div class="reveal">
+        <div style="font-family:'Playfair Display',serif;font-size:2.8rem;font-weight:900;line-height:1">3+</div>
+        <div style="opacity:0.85;margin-top:6px;font-size:0.95rem">Years in Business</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════ SERVICES ════ -->
+<section class="section">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-label">What We Offer</span>
+      <h2>Our Services</h2>
+      <p>From quick bites to full family meals — we've got every craving covered</p>
+    </div>
+    <div class="services-grid">
+      <div class="service-card reveal">
+        <div class="service-icon">🚴</div>
+        <h4>Fast Home Delivery</h4>
+        <p>Our dedicated delivery team ensures your food reaches you hot, fresh and within 30 minutes — guaranteed.</p>
+      </div>
+      <div class="service-card reveal">
+        <div class="service-icon">🎂</div>
+        <h4>Custom Cake Orders</h4>
+        <p>Celebrate birthdays, anniversaries and milestones with our freshly baked custom cakes. Order 24 hrs in advance.</p>
+      </div>
+      <div class="service-card reveal">
+        <div class="service-icon">🍱</div>
+        <h4>Bulk & Catering</h4>
+        <p>Office lunches, house parties, college events — we handle catering for 10 to 500 people with ease.</p>
+      </div>
+      <div class="service-card reveal">
+        <div class="service-icon">📱</div>
+        <h4>Online Ordering</h4>
+        <p>Browse our full menu, customize your order, track delivery in real-time — all from our website or app.</p>
+      </div>
+      <div class="service-card reveal">
+        <div class="service-icon">🌿</div>
+        <h4>Veg & Vegan Options</h4>
+        <p>A dedicated section of plant-based, dairy-free and purely vegetarian items crafted with as much love.</p>
+      </div>
+      <div class="service-card reveal">
+        <div class="service-icon">🎁</div>
+        <h4>Gift Combos</h4>
+        <p>Send a surprise food hamper to someone special. Curated combos for every occasion, delivered with a note.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════ TEAM ════ -->
+<section class="section" style="background:var(--bg-section)">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-label">Meet the Team</span>
+      <h2>The People Behind the Plates 👨‍🍳</h2>
+      <p>A passionate crew of chefs, riders and customer lovers</p>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:28px">
+      <div class="service-card reveal" style="text-align:center">
+        <div style="font-size:3rem;margin-bottom:12px">👨‍🍳</div>
+        <h4>Arjun Sharma</h4>
+        <p style="color:var(--primary);font-size:0.85rem;font-weight:600;margin-bottom:8px">Head Chef & Co-Founder</p>
+        <p>10 years of culinary experience across Mumbai & Pune's top restaurants.</p>
+      </div>
+      <div class="service-card reveal" style="text-align:center">
+        <div style="font-size:3rem;margin-bottom:12px">👩‍💼</div>
+        <h4>Priya Desai</h4>
+        <p style="color:var(--primary);font-size:0.85rem;font-weight:600;margin-bottom:8px">Co-Founder & Operations</p>
+        <p>Ensures every order is processed smoothly and every customer is delighted.</p>
+      </div>
+      <div class="service-card reveal" style="text-align:center">
+        <div style="font-size:3rem;margin-bottom:12px">👨‍🔬</div>
+        <h4>Rohan Kulkarni</h4>
+        <p style="color:var(--primary);font-size:0.85rem;font-weight:600;margin-bottom:8px">Pastry Chef</p>
+        <p>Our dessert wizard — the genius behind our Lava Cake and Tiramisu.</p>
+      </div>
+      <div class="service-card reveal" style="text-align:center">
+        <div style="font-size:3rem;margin-bottom:12px">👩‍🍳</div>
+        <h4>Sneha Pawar</h4>
+        <p style="color:var(--primary);font-size:0.85rem;font-weight:600;margin-bottom:8px">Chef – Indian Cuisine</p>
+        <p>Specializes in Indian-fusion and makes sure our desi dishes hit just right.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════ REVIEWS ════ -->
+<section class="section">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-label">Customer Love</span>
+      <h2>What People Are Saying ⭐</h2>
+      <p>Real words from real customers who love what we do</p>
+    </div>
+    <div class="reviews-grid">
+      <div class="review-card reveal">
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">"Best pizza I've had in Pune — hands down. The Margherita is just perfect. Crispy base, fresh toppings and delivered piping hot in under 25 minutes!"</p>
+        <div class="reviewer">
+          <div class="reviewer-avatar">A</div>
+          <div>
+            <div class="reviewer-name">Ananya Joshi</div>
+            <div class="reviewer-date">Ordered Margherita Pizza · May 2025</div>
+          </div>
+        </div>
+      </div>
+      <div class="review-card reveal">
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">"The Double Smash Burger is genuinely addictive. I've ordered it four times this month and it's perfect every time. The packaging is also really good!"</p>
+        <div class="reviewer">
+          <div class="reviewer-avatar">R</div>
+          <div>
+            <div class="reviewer-name">Rahul Patil</div>
+            <div class="reviewer-date">Ordered Double Smash Burger · Apr 2025</div>
+          </div>
+        </div>
+      </div>
+      <div class="review-card reveal">
+        <div class="review-stars">★★★★☆</div>
+        <p class="review-text">"Chocolate Lava Cake is the best dessert I've ordered online. Still oozy when it arrived! Mango Lassi was thick and real — not the watery stuff you get elsewhere."</p>
+        <div class="reviewer">
+          <div class="reviewer-avatar">S</div>
+          <div>
+            <div class="reviewer-name">Shruti Mehta</div>
+            <div class="reviewer-date">Ordered Lava Cake + Mango Lassi · Mar 2025</div>
+          </div>
+        </div>
+      </div>
+      <div class="review-card reveal">
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">"Used FoodieHub for our office catering last week — 40 people, zero complaints! The food arrived on time, was well-packed and absolutely delicious. Will order again!"</p>
+        <div class="reviewer">
+          <div class="reviewer-avatar">V</div>
+          <div>
+            <div class="reviewer-name">Vikram Nair</div>
+            <div class="reviewer-date">Catering Order · Feb 2025</div>
+          </div>
+        </div>
+      </div>
+      <div class="review-card reveal">
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">"Love the variety! From Paneer Tikka Pizza to Tiramisu — everything feels crafted with care. My go-to app for weekends. Also, the dark mode on the website is 🔥"</p>
+        <div class="reviewer">
+          <div class="reviewer-avatar">N</div>
+          <div>
+            <div class="reviewer-name">Neha Gupta</div>
+            <div class="reviewer-date">Regular Customer · 2025</div>
+          </div>
+        </div>
+      </div>
+      <div class="review-card reveal">
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">"Ordered 3 times this week and every experience has been flawless. The Oreo Milkshake is a dream. Customer support responded in under 2 minutes when I had a query!"</p>
+        <div class="reviewer">
+          <div class="reviewer-avatar">K</div>
+          <div>
+            <div class="reviewer-name">Karan Shah</div>
+            <div class="reviewer-date">Loyal Customer · 2025</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════ CTA ════ -->
+<section style="background:linear-gradient(135deg,var(--primary),#E63946);padding:80px 0;text-align:center;color:#fff">
+  <div class="container">
+    <div class="reveal">
+      <h2 style="color:#fff;margin-bottom:12px;font-size:2.4rem">Hungry? Let's Fix That. 🍕</h2>
+      <p style="opacity:0.9;margin-bottom:32px;font-size:1.05rem">Browse our full menu and get your order delivered in 30 minutes.</p>
+      <a href="menu.html" class="btn" style="background:#fff;color:var(--primary);font-weight:700;font-size:1rem;padding:14px 36px">
+        <i class="fa-solid fa-utensils"></i> Order Now
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════════ FOOTER ════ -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="nav-logo">
+          <div class="logo-icon">🍴</div>
+          Foodie<span>Hub</span>
+        </a>
+        <p>Bringing delicious, freshly-cooked food to your doorstep since 2022.</p>
+      </div>
+      <div class="footer-col">
+        <h5>Quick Links</h5>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col"></div>
+      <div class="footer-col">
+        <h5>Contact</h5>
+        <ul>
+          <li><a href="tel:+919999999999"><i class="fa-solid fa-phone"></i> +91 99999 99999</a></li>
+          <li><a href="contact.html"><i class="fa-solid fa-location-dot"></i> Pune, Maharashtra</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 FoodieHub. Made with ❤️ for food lovers.</p>
+    </div>
+  </div>
+</footer>
+
+<!-- CART PANEL -->
+<div class="cart-overlay" id="cartOverlay"></div>
+<aside class="cart-panel" id="cartPanel">
+  <div class="cart-header">
+    <h3><i class="fa-solid fa-bag-shopping" style="color:var(--primary);margin-right:8px"></i> Your Cart</h3>
+    <button class="cart-close" id="cartClose"><i class="fa-solid fa-xmark"></i></button>
+  </div>
+  <div class="cart-items" id="cartItems"></div>
+  <div class="cart-footer">
+    <div class="cart-totals">
+      <div class="cart-row"><span>Subtotal</span><span id="cartSubtotal">₹0</span></div>
+      <div class="cart-row"><span>Delivery Fee</span><span id="cartDelivery">₹0</span></div>
+      <div class="cart-row"><span>GST (5%)</span><span id="cartTax">₹0</span></div>
+      <div class="cart-row total"><span>Total</span><span id="cartTotal">₹0</span></div>
+    </div>
+    <button class="btn btn-primary" id="placeOrder">
+      <i class="fa-solid fa-check-circle"></i> Place Order
+    </button>
+  </div>
+</aside>
+<div class="modal-overlay" id="orderModal">
+  <div class="modal">
+    <div class="modal-icon">🎉</div>
+    <h3>Order Placed!</h3>
+    <p>Order <strong id="orderNum">#FH12345</strong> confirmed. ETA: <strong>25–30 mins</strong></p>
+    <table class="bill-table">
+      <thead><tr><th>Item</th><th>Qty</th><th>Amount</th></tr></thead>
+      <tbody id="billBody"></tbody>
+      <tfoot>
+        <tr class="bill-total"><td colspan="2"><strong>Grand Total</strong></td><td><strong id="billTotal">₹0</strong></td></tr>
+      </tfoot>
+    </table>
+    <button class="btn btn-primary" id="modalClose" style="width:100%;justify-content:center">Done</button>
+  </div>
+</div>
+
+<script src="js/script.js"></script>
+</body>
+</html>
